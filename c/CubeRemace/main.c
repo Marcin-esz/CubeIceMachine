@@ -4,23 +4,23 @@
  * Created on: 31.05.2018
  *     Author: Marcin Szewczyk
 */
-// do彻czanie systemowych plik體 nag丑wkowych
+// do艂膮czanie systemowych plik贸w nag艂贸wkowych
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/pgmspace.h>
 #include "mk_build.h"
 
-// miejsce na do彻czanie w砤snych plik體
+// miejsce na do艂膮czanie w艂asnych plik贸w
 
 
-// g丑wna funkcja programu - main()
+// g艂贸wna funkcja programu - main()
 int main( void ) {
 
-// sekcja inicjalizacji peryferi體
+// sekcja inicjalizacji peryferi贸w
 
-// g丑wna p阾la programu
+// g艂贸wna p臋tla programu
     while ( 1 ) {
 
-    }
+    }                          
 
-}
+}                                    
