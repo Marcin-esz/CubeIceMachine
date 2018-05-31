@@ -25,6 +25,6 @@
 /* These lines will be updated automaticaly by MkClipse */
 const char MkBuildVersion[] PROGMEM = {"1.0.0"};
 const char MkBuildNumber[] PROGMEM = {"1"};
-const char MkBuildDate[] PROGMEM = {"31.05.2018"};
-const char MkBuildTime[] PROGMEM = {"22:44:38"};
+const char MkBuildDate[] PROGMEM = {"01.06.2018"};
+const char MkBuildTime[] PROGMEM = {"00:15:18"};
 
