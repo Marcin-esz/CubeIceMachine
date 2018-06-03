@@ -1,0 +1,418 @@
+<OPEN WIRE DIAGRAM VERSION 1/>
+<UNIT Unit1>
+  <COMPONENT Arduino>
+    <X 672/>
+    <INSTANCE object Arduino: TArduinoBoard
+  Modules.Items = <
+    item
+      _ = TArduinoEEPROMModule
+    end
+    item
+      _ = TArduinoProcessorModule
+    end
+    item
+      _ = TArduinoWatchdogTimerModule
+    end\>
+  BoardType = 'Arduino Mega 2560'
+  AnalogInputReference = Default
+  Serial.Items = <
+    item
+      _ = TArduinoHardwareSerial
+    end
+    item
+      _ = TArduinoHardwareSerial
+    end
+    item
+      _ = TArduinoHardwareSerial
+    end
+    item
+      _ = TArduinoHardwareSerial
+    end\>
+  AnalogInput.Items = <
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end\>
+  I2CChannels.Items = <
+    item
+      _ = TArduinoI2C
+      InputPin.Form = __OpenWireRootUnit__
+      InputPin.SourcePins = (
+        __OpenWireRootUnit__.DisplayOLED1.OutputPin
+        __OpenWireRootUnit__.EEPROM1.OutputPin)
+    end\>
+  SPIChannels.Items = <
+    item
+      _ = TArduinoSPI
+    end\>
+  Digital.Items = <
+    item
+      _ = TArduinoAdditionalDigitalSerial0Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial0Channel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMInterruptChannel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMInterruptChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.cooling.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.agitator.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.sorbet.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.cream.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.yogurt.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.watch.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.Buzzer1.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      DigitalInputPin.Form = __OpenWireRootUnit__
+      DigitalInputPin.SourcePin = __OpenWireRootUnit__.TempUp.OneWireOutputPin
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial3Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial3Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial2Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial2Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial1InterruptChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial1InterruptChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalI2C0InterruptChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalI2C0InterruptChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSPI0Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSPI0Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSPI0Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end\>
+end
+/>
+    <Y 256/>
+  </COMPONENT>
+  <COMPONENT TempDn>
+    <X 256/>
+    <INSTANCE object TempDn: TArduinoMaximOneWireThermometer
+  OneWireOutputPin.Form = __OpenWireRootUnit__
+  OneWireOutputPin.SinkPins = (
+    __OpenWireRootUnit__.TempUp.OneWireInputPin)
+  AlarmHighTemperature = 0.000000000000000000
+  AlarmLowTemperature = -20.000000000000000000
+  AlarmHighTemperature = 0.000000000000000000
+end
+/>
+    <Y 912/>
+  </COMPONENT>
+  <COMPONENT TempUp>
+    <X 480/>
+    <INSTANCE object TempUp: TArduinoMaximOneWireThermometer
+  OneWireInputPin.Form = __OpenWireRootUnit__
+  OneWireInputPin.SourcePin = __OpenWireRootUnit__.TempDn.OneWireOutputPin
+  OneWireOutputPin.Form = __OpenWireRootUnit__
+  OneWireOutputPin.SinkPins = (
+    (
+      __OpenWireRootUnit__.Arduino.Digital._Item13.DigitalInputPin
+      
+        '__OpenWireRootUnit__.Arduino.Digital.Digital(LED)[ 13 ].DigitalI' +
+        'nputPin'))
+  AlarmHighTemperature = 0.000000000000000000
+  AlarmLowTemperature = -10.000000000000000000
+  AlarmHighTemperature = 0.000000000000000000
+end
+/>
+    <Y 912/>
+  </COMPONENT>
+  <COMPONENT cooling>
+    <X 1008/>
+    <INSTANCE object cooling: TArduinoRelay
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item3.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 3 ].OutputPin')
+end
+/>
+    <Y 576/>
+  </COMPONENT>
+  <COMPONENT agitator>
+    <X 1008/>
+    <INSTANCE object agitator: TArduinoRelay
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item5.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 5 ].OutputPin')
+end
+/>
+    <Y 624/>
+  </COMPONENT>
+  <COMPONENT yogurt>
+    <X 1008/>
+    <INSTANCE object yogurt: TArduinoButton
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item10.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 10 ].OutputPin')
+end
+/>
+    <Y 768/>
+  </COMPONENT>
+  <COMPONENT sorbet>
+    <X 1008/>
+    <INSTANCE object sorbet: TArduinoButton
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item6.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 6 ].OutputPin')
+end
+/>
+    <Y 672/>
+  </COMPONENT>
+  <COMPONENT cream>
+    <X 1008/>
+    <INSTANCE object cream: TArduinoButton
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item9.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 9 ].OutputPin')
+end
+/>
+    <Y 720/>
+  </COMPONENT>
+  <COMPONENT watch>
+    <X 1008/>
+    <INSTANCE object watch: TArduinoButton
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item11.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 11 ].OutputPin')
+end
+/>
+    <Y 816/>
+  </COMPONENT>
+  <COMPONENT DisplayOLED1>
+    <X 496/>
+    <INSTANCE object DisplayOLED1: TArduinoDisplaySSD1306I2C
+  OutputPin.Form = __OpenWireRootUnit__
+  OutputPin.SinkPins = (
+    (
+      __OpenWireRootUnit__.Arduino.I2CChannels._Item0.InputPin
+      '__OpenWireRootUnit__.Arduino.I2CChannels.I2C.InputPin'))
+end
+/>
+    <Y 416/>
+  </COMPONENT>
+  <COMPONENT Buzzer1>
+    <X 1008/>
+    <INSTANCE object Buzzer1: TArduinoBuzzer
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item12.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 12 ].OutputPin')
+end
+/>
+    <Y 864/>
+  </COMPONENT>
+  <COMPONENT EEPROM1>
+    <X 496/>
+    <INSTANCE object EEPROM1: TArduinoEEPROMI2C
+  OutputPin.Form = __OpenWireRootUnit__
+  OutputPin.SinkPins = (
+    (
+      __OpenWireRootUnit__.Arduino.I2CChannels._Item0.InputPin
+      '__OpenWireRootUnit__.Arduino.I2CChannels.I2C.InputPin'))
+end
+/>
+    <Y 480/>
+  </COMPONENT>
+    <BINDINGS object TOWPinBindingManager
+end
+/>
+</UNIT>

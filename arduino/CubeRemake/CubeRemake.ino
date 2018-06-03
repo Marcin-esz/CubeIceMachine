@@ -1,23 +1,26 @@
 #include <DallasTemperature.h>
-#include <OneWire.h>
 
+  pinMode(3, OUTPUT);
+  digitalWrite(3,HIGH);
+  
+// definicje
+#define ONE_WIRE_BUS 2 // magistrala oneWire podłączona do pinu 2
+#define TEMPERATURE_PRECISION 9 // rozdzielczość
 
-
-// Data wire is plugged into port 2 on the Arduino
-#define ONE_WIRE_BUS 2
-#define TEMPERATURE_PRECISION 9
-
-// Setup a oneWire instance to communicate with any OneWire devices (not just Maxim/Dallas temperature ICs)
+// konfiguracja oneWire do komunikacji z dowolnym urządzeniem OneWire (nie tylko z układami temperaturowymi Maxim / Dallas)
 OneWire oneWire(ONE_WIRE_BUS);
 
-// Pass our oneWire reference to Dallas Temperature.
+// przekazanie odniesienia oneWire do temperatury Dallas.
 DallasTemperature sensors(&oneWire);
 
-// arrays to hold device addresses
+
+// tablica do przechowywania adresów urządzeń
 DeviceAddress insideThermometer, outsideThermometer;
 
 // Zmienne
-int mVperAmp = 185; // dla moduĹ‚u 20A - 100, dla moduĹ‚u 30A - 66
+int numberOfDevices; // liczba znalezionych czujników temperatury
+
+int mVperAmp = 185; // dla modułu 20A - 100, dla modułu 30A - 66
 int Wartosc_analogowa= 0; // 
 int ACSoffset = 2472;
 float  napiecie = 0;
@@ -25,25 +28,27 @@ double natezenie= 0;
 double srednie_natezenie =0;
 int srednia = 50;
 
-void setup() 
+void setup(void) 
 {
+ 
+    Serial.begin(9600); // uruchomienie portu szeregowego
+    sensors.begin();// inicjalizacja biblioteki
 
-// Start up the library
-   sensors.begin();
+      // przechwycenie liczby czujmików na magistrali oneWire
+    numberOfDevices = sensors.getDeviceCount(); 
 
-// locate devices on the bus
-  Serial.print("Locating devices...");
-  Serial.print("Found ");
+      // lokalizacja czujników na magistrali oneWire
+  Serial.print("Lokalizowanie urządzeń...");
+  Serial.print("Wykryto ");
   Serial.print(sensors.getDeviceCount(), DEC);
-  Serial.println(" devices.");
+  Serial.println(" czujników.");
 
-// report parasite power requirements
-  Serial.print("Parasite power is: ");
-  if (sensors.isParasitePowerMode()) Serial.println("ON");
-  else Serial.println("OFF");
+      // sprawdzanie mocy pasożytniczej
+  Serial.print("Moc pasożytnicza: ");
+  if (sensors.isParasitePowerMode()) Serial.println("WŁ");
+  else Serial.println("WYŁ");
    
-   pinMode(3, OUTPUT);
-   digitalWrite(3,HIGH);
+   
 
 }
 

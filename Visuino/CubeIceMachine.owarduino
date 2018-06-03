@@ -1,0 +1,775 @@
+<OPEN WIRE DIAGRAM VERSION 1/>
+<UNIT Unit1>
+  <COMPONENT Arduino>
+    <X 1344/>
+    <INSTANCE object Arduino: TArduinoBoard
+  Modules.Items = <
+    item
+      _ = TArduinoEEPROMModule
+      Elements.Items = <
+        item
+          _ = TArduinoMemoryAnalogElement
+          Name = 'czujnik 1 alarm Hi'
+          RememberInputPin.Form = __OpenWireRootUnit__
+          RememberInputPin.SourcePins = (
+            (
+              __OpenWireRootUnit__.remember.OutputPins._Pin0
+              '__OpenWireRootUnit__.remember.OutputPins.Pin [0]'))
+          RecallInputPin.Form = __OpenWireRootUnit__
+          RecallInputPin.SourcePins = (
+            (
+              __OpenWireRootUnit__.recall.OutputPins._Pin0
+              '__OpenWireRootUnit__.recall.OutputPins.Pin [0]'))
+          InputPin.Form = __OpenWireRootUnit__
+          InputPin.SourcePin = (
+            __OpenWireRootUnit__.ModbusDevice1.Tables._Item0.Registers._Item0.OutputPin
+            
+              '__OpenWireRootUnit__.ModbusDevice1.Tables.Holding Registers1.Reg' +
+              'isters.czujnik1 alarm Hi [ Addr: 10 ].OutputPin')
+          OutputPin.Form = __OpenWireRootUnit__
+          OutputPin.SinkPins = (
+            (
+              __OpenWireRootUnit__.ModbusDevice1.Tables._Item0.Registers._Item0.InputPin
+              
+                '__OpenWireRootUnit__.ModbusDevice1.Tables.Holding Registers1.Reg' +
+                'isters.czujnik1 alarm Hi [ Addr: 10 ].InputPin')
+            (
+              __OpenWireRootUnit__.TempDn.AlarmHighTemperatureInputPin
+              '__OpenWireRootUnit__.TempDn.AlarmHighTemperature'))
+        end
+        item
+          _ = TArduinoMemoryAnalogElement
+          Name = 'czujnik 1 alarm Lo'
+          RememberInputPin.Form = __OpenWireRootUnit__
+          RememberInputPin.SourcePins = (
+            (
+              __OpenWireRootUnit__.remember.OutputPins._Pin1
+              '__OpenWireRootUnit__.remember.OutputPins.Pin [1]'))
+          RecallInputPin.Form = __OpenWireRootUnit__
+          RecallInputPin.SourcePins = (
+            (
+              __OpenWireRootUnit__.recall.OutputPins._Pin1
+              '__OpenWireRootUnit__.recall.OutputPins.Pin [1]'))
+          InputPin.Form = __OpenWireRootUnit__
+          InputPin.SourcePin = (
+            __OpenWireRootUnit__.ModbusDevice1.Tables._Item0.Registers._Item1.OutputPin
+            
+              '__OpenWireRootUnit__.ModbusDevice1.Tables.Holding Registers1.Reg' +
+              'isters.czujnik 1 alarm Lo [ Addr: 12 ].OutputPin')
+          OutputPin.Form = __OpenWireRootUnit__
+          OutputPin.SinkPins = (
+            (
+              __OpenWireRootUnit__.ModbusDevice1.Tables._Item0.Registers._Item1.InputPin
+              
+                '__OpenWireRootUnit__.ModbusDevice1.Tables.Holding Registers1.Reg' +
+                'isters.czujnik 1 alarm Lo [ Addr: 12 ].InputPin')
+            (
+              __OpenWireRootUnit__.TempDn.AlarmLowTemperatureInputPin
+              '__OpenWireRootUnit__.TempDn.AlarmLowTemperature'))
+        end\>
+    end
+    item
+      _ = TArduinoProcessorModule
+    end
+    item
+      _ = TArduinoWatchdogTimerModule
+    end\>
+  BoardType = 'Arduino Mega 2560'
+  AnalogInputReference = Default
+  Serial.Items = <
+    item
+      _ = TArduinoHardwareSerial
+      InputPin.Form = __OpenWireRootUnit__
+      InputPin.SourcePins = (
+        __OpenWireRootUnit__.ModbusServerSerialProtocol1.OutputPin)
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.ModbusServerSerialProtocol1.InputPin)
+    end
+    item
+      _ = TArduinoHardwareSerial
+    end
+    item
+      _ = TArduinoHardwareSerial
+    end
+    item
+      _ = TArduinoHardwareSerial
+    end\>
+  AnalogInput.Items = <
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end
+    item
+      _ = TArduinoAnalogInputChannel
+    end\>
+  I2CChannels.Items = <
+    item
+      _ = TArduinoI2C
+      InputPin.Form = __OpenWireRootUnit__
+      InputPin.SourcePins = (
+        __OpenWireRootUnit__.DisplayOLED1.OutputPin)
+    end\>
+  SPIChannels.Items = <
+    item
+      _ = TArduinoSPI
+    end\>
+  Digital.Items = <
+    item
+      _ = TArduinoAdditionalDigitalSerial0Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial0Channel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMInterruptChannel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMInterruptChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.cooling.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.agitator.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.sorbet.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      DigitalInputPin.Form = __OpenWireRootUnit__
+      DigitalInputPin.SourcePin = __OpenWireRootUnit__.TempDn.OneWireOutputPin
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      DigitalInputPin.Form = __OpenWireRootUnit__
+      DigitalInputPin.SourcePin = __OpenWireRootUnit__.TempUp.OneWireOutputPin
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.cream.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.yogurt.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.watch.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+      OutputPin.Form = __OpenWireRootUnit__
+      OutputPin.SinkPins = (
+        __OpenWireRootUnit__.Buzzer1.InputPin)
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial3Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial3Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial2Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial2Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial1InterruptChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSerial1InterruptChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalI2C0InterruptChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalI2C0InterruptChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+    end
+    item
+      _ = TArduinoBasicDigitalPWMChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSPI0Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSPI0Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalSPI0Channel
+    end
+    item
+      _ = TArduinoAdditionalDigitalChannel
+    end\>
+end
+/>
+    <Y 480/>
+  </COMPONENT>
+  <COMPONENT TempDn>
+    <X 1056/>
+    <INSTANCE object TempDn: TArduinoMaximOneWireThermometer
+  OutputPin.Form = __OpenWireRootUnit__
+  OutputPin.SinkPins = (
+    (
+      __OpenWireRootUnit__.ModbusDevice1.Tables._Item0.Registers._Item2.InputPin
+      
+        '__OpenWireRootUnit__.ModbusDevice1.Tables.Holding Registers1.Reg' +
+        'isters.temperatura czujnika1 [ Addr: 14 ].InputPin'))
+  ClockInputPin.Form = __OpenWireRootUnit__
+  ClockInputPin.SourcePins = (
+    (
+      __OpenWireRootUnit__.MultiSource1.OutputPins._Pin2
+      '__OpenWireRootUnit__.MultiSource1.OutputPins.Pin [2]'))
+  OneWireOutputPin.Form = __OpenWireRootUnit__
+  OneWireOutputPin.SinkPins = (
+    (
+      __OpenWireRootUnit__.Arduino.Digital._Item7.DigitalInputPin
+      
+        '__OpenWireRootUnit__.Arduino.Digital.Digital[ 7 ].DigitalInputPi' +
+        'n'))
+  AlarmHighTemperature = 0.000000000000000000
+  AlarmLowTemperature = -20.000000000000000000
+  AlarmHighTemperature = 0.000000000000000000
+end
+/>
+    <Y 1168/>
+  </COMPONENT>
+  <COMPONENT TempUp>
+    <X 1056/>
+    <INSTANCE object TempUp: TArduinoMaximOneWireThermometer
+  ClockInputPin.Form = __OpenWireRootUnit__
+  ClockInputPin.SourcePins = (
+    (
+      __OpenWireRootUnit__.MultiSource1.OutputPins._Pin3
+      '__OpenWireRootUnit__.MultiSource1.OutputPins.Pin [3]'))
+  OneWireOutputPin.Form = __OpenWireRootUnit__
+  OneWireOutputPin.SinkPins = (
+    (
+      __OpenWireRootUnit__.Arduino.Digital._Item8.DigitalInputPin
+      
+        '__OpenWireRootUnit__.Arduino.Digital.Digital[ 8 ].DigitalInputPi' +
+        'n'))
+  AlarmHighTemperature = 0.000000000000000000
+  AlarmLowTemperature = -10.000000000000000000
+  AlarmHighTemperature = 0.000000000000000000
+end
+/>
+    <Y 1264/>
+  </COMPONENT>
+  <COMPONENT cooling>
+    <X 1824/>
+    <INSTANCE object cooling: TArduinoRelay
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item3.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 3 ].OutputPin')
+end
+/>
+    <Y 848/>
+  </COMPONENT>
+  <COMPONENT agitator>
+    <X 1824/>
+    <INSTANCE object agitator: TArduinoRelay
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item5.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 5 ].OutputPin')
+end
+/>
+    <Y 896/>
+  </COMPONENT>
+  <COMPONENT yogurt>
+    <X 1824/>
+    <INSTANCE object yogurt: TArduinoButton
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item10.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 10 ].OutputPin')
+end
+/>
+    <Y 1040/>
+  </COMPONENT>
+  <COMPONENT sorbet>
+    <X 1824/>
+    <INSTANCE object sorbet: TArduinoButton
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item6.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 6 ].OutputPin')
+end
+/>
+    <Y 944/>
+  </COMPONENT>
+  <COMPONENT cream>
+    <X 1824/>
+    <INSTANCE object cream: TArduinoButton
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item9.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 9 ].OutputPin')
+end
+/>
+    <Y 992/>
+  </COMPONENT>
+  <COMPONENT watch>
+    <X 1824/>
+    <INSTANCE object watch: TArduinoButton
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item11.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 11 ].OutputPin')
+end
+/>
+    <Y 1088/>
+  </COMPONENT>
+  <COMPONENT DisplayOLED1>
+    <X 1104/>
+    <INSTANCE object DisplayOLED1: TArduinoDisplaySSD1306I2C
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePins = (
+    __OpenWireRootUnit__.FormattedText1.OutputPin)
+  RefreshInputPin.Form = __OpenWireRootUnit__
+  RefreshInputPin.SourcePins = (
+    (
+      __OpenWireRootUnit__.MultiSource1.OutputPins._Pin1
+      '__OpenWireRootUnit__.MultiSource1.OutputPins.Pin [1]'))
+  OutputPin.Form = __OpenWireRootUnit__
+  OutputPin.SinkPins = (
+    (
+      __OpenWireRootUnit__.Arduino.I2CChannels._Item0.InputPin
+      '__OpenWireRootUnit__.Arduino.I2CChannels.I2C.InputPin'))
+end
+/>
+    <Y 800/>
+  </COMPONENT>
+  <COMPONENT Buzzer1>
+    <X 1824/>
+    <INSTANCE object Buzzer1: TArduinoBuzzer
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Digital._Item12.OutputPin
+    '__OpenWireRootUnit__.Arduino.Digital.Digital[ 12 ].OutputPin')
+end
+/>
+    <Y 1136/>
+  </COMPONENT>
+  <COMPONENT FormattedText1>
+    <X 944/>
+    <INSTANCE object FormattedText1: TArduinoFormattedText
+  OutputPin.Form = __OpenWireRootUnit__
+  OutputPin.SinkPins = (
+    __OpenWireRootUnit__.DisplayOLED1.InputPin)
+  ClockInputPin.Form = __OpenWireRootUnit__
+  ClockInputPin.SourcePins = (
+    (
+      __OpenWireRootUnit__.MultiSource1.OutputPins._Pin0
+      '__OpenWireRootUnit__.MultiSource1.OutputPins.Pin [0]'))
+end
+/>
+    <Y 800/>
+  </COMPONENT>
+  <COMPONENT ClockGenerator1>
+    <X 656/>
+    <INSTANCE object ClockGenerator1: TArduinoClockGenerator
+  OutputPin.Form = __OpenWireRootUnit__
+  OutputPin.SinkPins = (
+    __OpenWireRootUnit__.MultiSource1.InputPin)
+end
+/>
+    <Y 784/>
+  </COMPONENT>
+  <COMPONENT MultiSource1>
+    <X 816/>
+    <INSTANCE object MultiSource1: TArduinoClockMultiSource
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePins = (
+    __OpenWireRootUnit__.ClockGenerator1.OutputPin)
+  OutputPins.Count = 4
+  OutputPins.__Serialized__ = (
+    sForm
+    '__OpenWireRootUnit__'
+    aPins
+    (
+      o
+      (
+        sType
+        'ptSource')
+      o
+      (
+        sType
+        'ptSource')
+      o
+      (
+        sType
+        'ptSource')
+      o
+      (
+        sType
+        'ptSource')))
+  OutputPins.Form = __OpenWireRootUnit__
+  OutputPins.Pins = (
+    Sinks
+    (
+      __OpenWireRootUnit__.FormattedText1.ClockInputPin)
+    Sinks
+    (
+      __OpenWireRootUnit__.DisplayOLED1.RefreshInputPin)
+    Sinks
+    (
+      __OpenWireRootUnit__.TempDn.ClockInputPin)
+    Sinks
+    (
+      __OpenWireRootUnit__.TempUp.ClockInputPin))
+end
+/>
+    <Y 784/>
+  </COMPONENT>
+  <COMPONENT ModbusDevice1>
+    <X 256/>
+    <INSTANCE object ModbusDevice1: TArduinoModbusDevice
+  Tables.Items = <
+    item
+      _ = TArduinoModbusDeviceTableHoldingRegisters
+      Name = 'Holding Registers1'
+      Address = 10
+      Registers.Items = <
+        item
+          _ = TArduinoModbusDeviceHoldingRegister32BitFloat
+          Name = 'czujnik1 alarm Hi'
+          InputPin.Form = __OpenWireRootUnit__
+          InputPin.SourcePin = (
+            __OpenWireRootUnit__.Arduino.Modules._Item0.Elements._Item0.OutputPin
+            
+              '__OpenWireRootUnit__.Arduino.Modules.EEPROM.Elements.czujnik 1 a' +
+              'larm Hi.OutputPin')
+          OutputPin.Form = __OpenWireRootUnit__
+          OutputPin.SinkPins = (
+            (
+              __OpenWireRootUnit__.Arduino.Modules._Item0.Elements._Item0.InputPin
+              
+                '__OpenWireRootUnit__.Arduino.Modules.EEPROM.Elements.czujnik 1 a' +
+                'larm Hi.InputPin'))
+        end
+        item
+          _ = TArduinoModbusDeviceHoldingRegister32BitFloat
+          Name = 'czujnik 1 alarm Lo'
+          InputPin.Form = __OpenWireRootUnit__
+          InputPin.SourcePin = (
+            __OpenWireRootUnit__.Arduino.Modules._Item0.Elements._Item1.OutputPin
+            
+              '__OpenWireRootUnit__.Arduino.Modules.EEPROM.Elements.czujnik 1 a' +
+              'larm Lo.OutputPin')
+          OutputPin.Form = __OpenWireRootUnit__
+          OutputPin.SinkPins = (
+            (
+              __OpenWireRootUnit__.Arduino.Modules._Item0.Elements._Item1.InputPin
+              
+                '__OpenWireRootUnit__.Arduino.Modules.EEPROM.Elements.czujnik 1 a' +
+                'larm Lo.InputPin'))
+        end
+        item
+          _ = TArduinoModbusDeviceHoldingRegister32BitFloat
+          Name = 'temperatura czujnika1'
+          InputPin.Form = __OpenWireRootUnit__
+          InputPin.SourcePin = __OpenWireRootUnit__.TempDn.OutputPin
+        end\>
+    end
+    item
+      _ = TArduinoModbusDeviceTableCoils
+      Name = 'Coils1'
+      Address = 10
+      Coils.Items = <
+        item
+          _ = TArduinoModbusDeviceCoil
+          Name = 'Coil1'
+          OutputPin.Form = __OpenWireRootUnit__
+          OutputPin.SinkPins = (
+            __OpenWireRootUnit__.remember.InputPin)
+        end
+        item
+          _ = TArduinoModbusDeviceCoil
+          Name = 'Coil2'
+          OutputPin.Form = __OpenWireRootUnit__
+          OutputPin.SinkPins = (
+            __OpenWireRootUnit__.recall.InputPin)
+        end\>
+    end\>
+  ModbusInputPin.Form = __OpenWireRootUnit__
+  ModbusInputPin.SourcePins = (
+    __OpenWireRootUnit__.ModbusServerSerialProtocol1.ModbusOutputPin)
+end
+/>
+    <Y 256/>
+  </COMPONENT>
+  <COMPONENT ModbusServerSerialProtocol1>
+    <X 1376/>
+    <INSTANCE object ModbusServerSerialProtocol1: TArduinoModbusServerSerialProtocol
+  OutputPin.Form = __OpenWireRootUnit__
+  OutputPin.SinkPins = (
+    (
+      __OpenWireRootUnit__.Arduino.Serial._Item0.InputPin
+      '__OpenWireRootUnit__.Arduino.Serial[0].InputPin'))
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePin = (
+    __OpenWireRootUnit__.Arduino.Serial._Item0.OutputPin
+    '__OpenWireRootUnit__.Arduino.Serial[0].OutputPin')
+  ModbusOutputPin.Form = __OpenWireRootUnit__
+  ModbusOutputPin.SinkPins = (
+    __OpenWireRootUnit__.ModbusDevice1.ModbusInputPin)
+end
+/>
+    <Y 400/>
+  </COMPONENT>
+  <COMPONENT remember>
+    <X 704/>
+    <INSTANCE object remember: TArduinoClockMultiSource
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePins = (
+    (
+      __OpenWireRootUnit__.ModbusDevice1.Tables._Item1.Coils._Item0.OutputPin
+      
+        '__OpenWireRootUnit__.ModbusDevice1.Tables.Coils1.Coils.Coil1 [ A' +
+        'ddr: 10 ].OutputPin'))
+  OutputPins.__Serialized__ = (
+    sForm
+    '__OpenWireRootUnit__'
+    aPins
+    (
+      o
+      (
+        sType
+        'ptSource')
+      o
+      (
+        sType
+        'ptSource')))
+  OutputPins.Form = __OpenWireRootUnit__
+  OutputPins.Pins = (
+    Sinks
+    (
+      (
+        __OpenWireRootUnit__.Arduino.Modules._Item0.Elements._Item0.RememberInputPin
+        
+          '__OpenWireRootUnit__.Arduino.Modules.EEPROM.Elements.czujnik 1 a' +
+          'larm Hi.RememberInputPin'))
+    Sinks
+    (
+      (
+        __OpenWireRootUnit__.Arduino.Modules._Item0.Elements._Item1.RememberInputPin
+        
+          '__OpenWireRootUnit__.Arduino.Modules.EEPROM.Elements.czujnik 1 a' +
+          'larm Lo.RememberInputPin')))
+end
+/>
+    <Y 416/>
+  </COMPONENT>
+  <COMPONENT recall>
+    <X 704/>
+    <INSTANCE object recall: TArduinoClockMultiSource
+  InputPin.Form = __OpenWireRootUnit__
+  InputPin.SourcePins = (
+    (
+      __OpenWireRootUnit__.ModbusDevice1.Tables._Item1.Coils._Item1.OutputPin
+      
+        '__OpenWireRootUnit__.ModbusDevice1.Tables.Coils1.Coils.Coil2 [ A' +
+        'ddr: 11 ].OutputPin'))
+  OutputPins.__Serialized__ = (
+    sForm
+    '__OpenWireRootUnit__'
+    aPins
+    (
+      o
+      (
+        sType
+        'ptSource')
+      o
+      (
+        sType
+        'ptSource')))
+  OutputPins.Form = __OpenWireRootUnit__
+  OutputPins.Pins = (
+    Sinks
+    (
+      (
+        __OpenWireRootUnit__.Arduino.Modules._Item0.Elements._Item0.RecallInputPin
+        
+          '__OpenWireRootUnit__.Arduino.Modules.EEPROM.Elements.czujnik 1 a' +
+          'larm Hi.RecallInputPin'))
+    Sinks
+    (
+      (
+        __OpenWireRootUnit__.Arduino.Modules._Item0.Elements._Item1.RecallInputPin
+        
+          '__OpenWireRootUnit__.Arduino.Modules.EEPROM.Elements.czujnik 1 a' +
+          'larm Lo.RecallInputPin')))
+end
+/>
+    <Y 576/>
+  </COMPONENT>
+    <SELECTION ModbusDevice1/>
+    <BINDINGS object TOWPinBindingManager
+  Bindings = (
+    TempDn
+    (
+      AlarmHighTemperature
+      TOWSingleSinkPinBinding
+      'AlarmHighTemperature'
+      (
+        __OpenWireRootUnit__.Arduino.Modules._Item0.Elements._Item0.OutputPin
+        
+          '__OpenWireRootUnit__.Arduino.Modules.EEPROM.Elements.czujnik 1 a' +
+          'larm Hi.OutputPin'))
+    (
+      AlarmLowTemperature
+      TOWSingleSinkPinBinding
+      'AlarmLowTemperature'
+      (
+        __OpenWireRootUnit__.Arduino.Modules._Item0.Elements._Item1.OutputPin
+        
+          '__OpenWireRootUnit__.Arduino.Modules.EEPROM.Elements.czujnik 1 a' +
+          'larm Lo.OutputPin')))
+end
+/>
+</UNIT>
