@@ -32,10 +32,7 @@
               __OpenWireRootUnit__.ModbusDevice1.Tables._Item0.Registers._Item0.InputPin
               
                 '__OpenWireRootUnit__.ModbusDevice1.Tables.Holding Registers1.Reg' +
-                'isters.czujnik1 alarm Hi [ Addr: 10 ].InputPin')
-            (
-              __OpenWireRootUnit__.TempDn.AlarmHighTemperatureInputPin
-              '__OpenWireRootUnit__.TempDn.AlarmHighTemperature'))
+                'isters.czujnik1 alarm Hi [ Addr: 10 ].InputPin'))
         end
         item
           _ = TArduinoMemoryAnalogElement
@@ -62,10 +59,7 @@
               __OpenWireRootUnit__.ModbusDevice1.Tables._Item0.Registers._Item1.InputPin
               
                 '__OpenWireRootUnit__.ModbusDevice1.Tables.Holding Registers1.Reg' +
-                'isters.czujnik 1 alarm Lo [ Addr: 12 ].InputPin')
-            (
-              __OpenWireRootUnit__.TempDn.AlarmLowTemperatureInputPin
-              '__OpenWireRootUnit__.TempDn.AlarmLowTemperature'))
+                'isters.czujnik 1 alarm Lo [ Addr: 12 ].InputPin'))
         end\>
     end
     item
@@ -748,28 +742,64 @@ end
 />
     <Y 576/>
   </COMPONENT>
-    <SELECTION ModbusDevice1/>
+  <COMPONENT products>
+    <X 1904/>
+    <INSTANCE object products: TArduinoMakeStructure
+  OnlyModified = True
+  Elements.Items = <
+    item
+      _ = TArduinoIntegerMakeStructureElement
+      Name = 'sorbet'
+    end
+    item
+      _ = TArduinoIntegerMakeStructureElement
+      Name = 'cream'
+    end
+    item
+      _ = TArduinoIntegerMakeStructureElement
+      Name = 'yoghurt'
+    end
+    item
+      _ = TArduinoIntegerMakeStructureElement
+      Name = 'watch'
+    end\>
+end
+/>
+    <Y 320/>
+  </COMPONENT>
+  <COMPONENT Factor>
+    <X 1904/>
+    <INSTANCE object Factor: TArduinoMakeStructure
+  Elements.Items = <
+    item
+      _ = TArduinoIntegerMakeStructureElement
+      Name = 'time_mixing'
+    end
+    item
+      _ = TArduinoIntegerMakeStructureElement
+      Name = 'time_making'
+    end
+    item
+      _ = TArduinoIntegerMakeStructureElement
+      Name = 'temp_product'
+    end
+    item
+      _ = TArduinoIntegerMakeStructureElement
+      Name = 'viscosity'
+    end
+    item
+      _ = TArduinoAnalogMakeStructureElement
+      Name = 'alarm_hi'
+    end
+    item
+      _ = TArduinoAnalogMakeStructureElement
+      Name = 'alarm_lo'
+    end\>
+end
+/>
+    <Y 496/>
+  </COMPONENT>
     <BINDINGS object TOWPinBindingManager
-  Bindings = (
-    TempDn
-    (
-      AlarmHighTemperature
-      TOWSingleSinkPinBinding
-      'AlarmHighTemperature'
-      (
-        __OpenWireRootUnit__.Arduino.Modules._Item0.Elements._Item0.OutputPin
-        
-          '__OpenWireRootUnit__.Arduino.Modules.EEPROM.Elements.czujnik 1 a' +
-          'larm Hi.OutputPin'))
-    (
-      AlarmLowTemperature
-      TOWSingleSinkPinBinding
-      'AlarmLowTemperature'
-      (
-        __OpenWireRootUnit__.Arduino.Modules._Item0.Elements._Item1.OutputPin
-        
-          '__OpenWireRootUnit__.Arduino.Modules.EEPROM.Elements.czujnik 1 a' +
-          'larm Lo.OutputPin')))
 end
 />
 </UNIT>
