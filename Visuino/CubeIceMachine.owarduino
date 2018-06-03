@@ -748,7 +748,6 @@ end
 />
     <Y 576/>
   </COMPONENT>
-    <SELECTION ModbusDevice1/>
     <BINDINGS object TOWPinBindingManager
   Bindings = (
     TempDn
